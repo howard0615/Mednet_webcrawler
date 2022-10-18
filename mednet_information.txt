@@ -1,0 +1,18 @@
+主網頁
+med-net.com
+--/CMSContent (健康文章)
+    --/ContentList
+        --/8 (疾病預防)
+        --/3 (飲食營養)
+        --/2 (健康生活)
+        --/4 (運動健身)
+        --/12 (高齡照護)
+    --/Content
+        --/{num} (文章)
+
+med-net.com/CMSContent/Content/{num} 文章格式
+
+if 文章存在：
+     request 200
+if 文章不存在：
+    關閉redirect情況下 request 302
